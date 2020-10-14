@@ -1,12 +1,26 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div
+    class="bg-cover bg-center"
+    :style="{
+      'background-image':
+        'url(' + require('./assets/img/background1.jpg') + ')',
+    }"
+  >
+    <Header />
+    <Hero />
+  </div>
 </template>
 
 <script>
+import Header from './components/Header.vue';
+import Hero from './components/Hero.vue';
+
 export default {
   name: 'App',
-  components: {},
+  components: {
+    Header,
+    Hero,
+  },
 };
 </script>
 
@@ -17,6 +31,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

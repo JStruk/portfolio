@@ -1,0 +1,16 @@
+{
+  "Routes": {
+    "About": {
+      "href": "#about",
+      "text": "About Me"
+    },
+    "Projects": {
+      "href": "#projects",
+      "text": "Projects"
+    },
+    "Contact": {
+      "href": "#contact",
+      "text": "Contact"
+    }
+  }
+}
