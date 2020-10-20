@@ -1,5 +1,8 @@
 <template>
   <section id="hero">
+    <vue-headful
+        title="Justin Struk"
+    />
     <div id="home" class="h-screen justify-center flex">
       <transition appear appear-active-class="fade-enter-active">
         <div class="flex items-center -mt-24">
