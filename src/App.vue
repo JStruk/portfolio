@@ -1,14 +1,10 @@
 <template>
-  <div
-    class="bg-cover h-screen bg-center"
-    :style="{
-      'background-image':
-        'url(' + require('./assets/img/background1.jpg') + ')',
-    }"
-  >
-    <Header />
-    <Hero />
-    <About class="h-screen" />
+  <div class="bg-cover h-screen bg-center"
+       :style="{ 'background-image': 'url(' + require('./assets/img/background1.jpg') + ')', }">
+    <Header/>
+    <Hero/>
+    <About class="h-screen"/>
+
   </div>
 </template>
 
