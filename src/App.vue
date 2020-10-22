@@ -12,6 +12,8 @@
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default {
   name: 'App',
@@ -20,6 +22,9 @@ export default {
     Hero,
     About,
   },
+  created(){
+    AOS.init();
+  }
 };
 </script>
 
