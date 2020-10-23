@@ -1,11 +1,13 @@
 <template>
   <section class="about" id="about">
-    <div class="bg-gray-700 lg:h-screen pt-24">
+    <div class="bg-gray-700 pt-24 pb-24">
+
       <div class="md:flex justify-center mt-20 mb-40 ml-10 mr-10 ">
-        <div data-aos="slide-right" data-aos-duration="1000" class="md:pl-20 flex md:flex-none justify-center p-4">
-          <img class="rounded-full h-auto border border-black w-1/2 " :src="images.justin"/>
+
+        <div data-aos="slide-right" data-aos-duration="1000" class="md:pl-20 flex md:flex-none pb-12 justify-center md:justify-end md:pr-12 md:w-1/2">
+          <img class="rounded-full h-auto border border-black w-1/4 " :src="images.justin"/>
         </div>
-        <div data-aos="slide-left" data-aos-duration="1000" class=" md:-ml-20 text-3xl lg:w-1/2 text-justify md:text-left">
+        <div data-aos="slide-left" data-aos-duration="1000" class=" text-3xl md:w-1/2 text-justify md:text-left">
           <div class="text-gray-500 w-full">
             <h1 class="font-bold text-white pb-2">About Me</h1>
             <div class="text-base">
@@ -26,6 +28,7 @@
           </div>
 
         </div>
+        <div class="w-1/4"></div>
       </div>
     </div>
   </section>
@@ -49,7 +52,6 @@ export default {
   computed: {},
   components: {},
   created(){
-
   }
 };
 </script>

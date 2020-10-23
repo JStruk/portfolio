@@ -1,9 +1,11 @@
 <template>
   <div class="bg-cover h-screen bg-center"
        :style="{ 'background-image': 'url(' + require('./assets/img/background1.jpg') + ')', }">
+
     <Header/>
     <Hero/>
-    <About class="h-screen"/>
+    <About />
+    <Experience/>
 
   </div>
 </template>
@@ -11,7 +13,9 @@
 <script>
 import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
-import About from './components/About';
+import About from './components/About'
+import Experience from './components/Experience';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -21,6 +25,7 @@ export default {
     Header,
     Hero,
     About,
+    Experience,
   },
   created(){
     AOS.init();

@@ -1,0 +1,23 @@
+{
+  "Conestoga" : {
+    "sectionTitle": "Education",
+    "company": "Conestoga College",
+    "jobTitle": "Software Engineering Technology",
+    "dates": "2016 - 2020",
+    "description": "Graduated from Conestoga College's Software Engineering Technology (SET) program with distinction in April of 2020"
+  },
+  "Vehikl" : {
+    "sectionTitle": "Work",
+    "company": "Vehikl",
+    "jobTitle": "Developer",
+    "dates": "August 2020 - Present",
+    "description": "We build exceptional web applications! Using Laravel, Vue, and other javascript libraries and frameworks"
+  },
+  "Geoware Inc." : {
+    "sectionTitle": "",
+    "company": "Geoware Inc.",
+    "jobTitle": "Software Developer",
+    "dates": "September 2018 - September 2019",
+    "description": "Helped in the development of a new Administration Application used by clients to maintain the data models used by the enterprise suite of real-time processing applications"
+  }
+}
