@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="bg-gray-600 text-gray-400">
-      <div id="left-half" class="md:flex justify-center pt-24 pb-24 ml-10 mr-10 ">
-        <div data-aos="slide-right" data-aos-duration="1000"
+      <div id="main-div" class="md:flex justify-center pt-24 pb-24 bg-gray-600 text-gray-400 ">
+        <div id="left-half" data-aos="slide-right" data-aos-duration="1000"
              class="md:pl-20 flex md:flex-none justify-center md:justify-end md:pr-12 md:w-1/2">
           <h2 class="text-3xl text-gray-400 underline"> {{ sectionTitle }}</h2>
         </div>
+
         <div id="right-half" data-aos="slide-left" data-aos-duration="1000"
              class=" text-3xl md:w-1/2 text-justify md:text-left">
           <h1 class="font-bold text-white pb-2 hover:text-blue-400"><a target="_blank" :href=link>{{ company }}</a></h1>
@@ -20,7 +20,6 @@
       </div>
     </div>
 
-  </div>
 </template>
 
 
