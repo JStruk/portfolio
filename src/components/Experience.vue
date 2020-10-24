@@ -1,18 +1,19 @@
 <template>
   <section id='work-experience'>
-
-    <div class="">
-
-      <work-event v-for="experience in experiences" :key="experience"
-      :section-title="experience.sectionTitle"
-      :company="experience.company"
-      :job-title="experience.jobTitle"
-      :dates="experience.dates"
-      :description="experience.description">
-      </work-event>
+    <div class="divide-y divide-gray-400">
+      <div v-for="section in experiences" :key="section">
+        <work-event v-for="lifeEvent in section" :key="lifeEvent"
+                    :section-title=lifeEvent.sectionTitle
+                    :company=lifeEvent.company
+                    :job-title=lifeEvent.jobTitle
+                    :dates=lifeEvent.dates
+                    :description=lifeEvent.description
+                    :link=lifeEvent.link
+                    :img=lifeEvent.img>
+        </work-event>
+      </div>
     </div>
-
-    </section>
+  </section>
 </template>
 
 
@@ -32,7 +33,11 @@ export default {
       experiences: experienceJson
     };
   },
-  methods: {},
+  methods: {
+    logMe(lol) {
+      console.log(lol);
+    }
+  },
 };
 
 </script>
