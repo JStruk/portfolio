@@ -1,20 +1,11 @@
 <template>
   <section id="footer">
-    <div class="w-full flex">
-
-      <ul>
-<!--        <li v-for="socialLink in socialLinks" :key="socialLink">-->
-<!--          {{socialLink.name}}-->
-<!--          <a :href=socialLink.url>-->
-<!--            <v-icon>mdi-github</v-icon>-->
-<!--          </a>-->
-
-<!--        </li>-->
-        <li>
-
-        </li>
-      </ul>
-
+    <div class="w-full flex items-center justify-center bg-gray-500">
+        <div v-for="socialLink in socialLinks" :key="socialLink">
+          <a :href=socialLink.url target="_blank">
+            <fa class="h-10 m-4" :icon=socialLink.className type="fab"></fa>
+          </a>
+        </div>
     </div>
   </section>
 </template>
@@ -25,7 +16,6 @@
 import socialLinksJson from '../data/socials.json';
 
 export default {
-
   data() {
     return {
       socialLinks: socialLinksJson.socialLinks
