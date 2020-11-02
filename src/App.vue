@@ -6,6 +6,7 @@
     <Hero/>
     <About />
     <Experience/>
+    <Footer/>
 
   </div>
 </template>
@@ -15,6 +16,7 @@ import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About'
 import Experience from './components/Experience';
+import Footer from './components/Footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,6 +28,7 @@ export default {
     Hero,
     About,
     Experience,
+    Footer,
   },
   created(){
     AOS.init();

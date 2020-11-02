@@ -3,17 +3,17 @@
     {
       "name": "linkedin",
       "url": "https://www.linkedin.com/in/justinstruk/",
-      "className": "fa fa-linkedin"
+      "className": "linkedin"
     },
     {
       "name": "github",
       "url": "http://github.com/jstruk",
-      "className": "fa fa-github"
+      "className": "github"
     },
     {
       "name": "twitter",
       "url": "https://twitter.com/JStrukDev",
-      "className": "fa fa-twitter"
+      "className": "twitter"
     }
   ]
 }

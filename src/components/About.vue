@@ -4,8 +4,8 @@
 
       <div class="md:flex justify-center mt-20 mb-40 ml-10 mr-10 ">
 
-        <div data-aos="slide-right" data-aos-duration="1000" class="md:pl-20 flex md:flex-none pb-12 justify-center md:justify-end md:pr-12 md:w-1/2">
-          <img class="rounded-full h-auto border border-black w-1/4 " :src="images.justin"/>
+        <div data-aos="slide-right" data-aos-duration="1000" class="md:pl-20 flex md:flex-none pb-12 justify-center md:justify-end md:pr-12 md:w-1/2 h-32 md:h-64">
+          <img class="rounded-full border border-black w-1/4" :src="images.justin"/>
         </div>
         <div data-aos="slide-left" data-aos-duration="1000" class=" text-3xl md:w-1/2 text-justify md:text-left">
           <div class="text-gray-500 w-full">
