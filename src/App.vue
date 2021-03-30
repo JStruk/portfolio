@@ -32,6 +32,11 @@ export default {
   },
   created(){
     AOS.init();
+  },
+  mounted() {
+    this.$gtag.pageview({
+      page_path: '/home',
+    })
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div id="main-div" class="md:flex justify-center pt-24 pb-24 bg-gray-600 text-gray-400 ">
+      <div id="main-div" class="md:flex justify-center pt-12 pb-24 bg-gray-600 text-gray-400 ">
         <div id="left-half" data-aos="slide-right" data-aos-duration="1000"
              class="md:pl-20 flex md:flex-none justify-center md:justify-end md:pr-12 md:w-1/2">
           <h2 class="text-3xl text-gray-400 underline"> {{ sectionTitle }}</h2>

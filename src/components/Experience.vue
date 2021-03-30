@@ -38,6 +38,11 @@ export default {
       console.log(lol);
     }
   },
+  mounted() {
+    this.$gtag.pageview({
+      page_path: '/experience',
+    })
+  }
 };
 
 </script>
