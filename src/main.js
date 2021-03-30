@@ -10,8 +10,11 @@ const app = createApp(App);
 
 app.use(VueGtag, {
   property: {
-    id: 'G-XGZ4QQ2VPB'
-  }
+    id: 'G-PSJ9G4E656',
+    params: {
+      send_page_view: true
+    }
+  },
 });
 
 app.component('vue-headful', vueHeadful);
