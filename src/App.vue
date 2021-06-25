@@ -6,6 +6,7 @@
     <Hero/>
     <About />
     <Experience/>
+    <Contact />
     <Footer/>
 
   </div>
@@ -16,6 +17,7 @@ import Header from './components/Header.vue';
 import Hero from './components/Hero.vue';
 import About from './components/About'
 import Experience from './components/Experience';
+import Contact from './components/Contact'
 import Footer from './components/Footer';
 
 import AOS from 'aos';
@@ -28,6 +30,7 @@ export default {
     Hero,
     About,
     Experience,
+    Contact,
     Footer,
   },
   created(){
