@@ -105,9 +105,6 @@ export default {
         reply_to: this.email,
         message: this.message
       }
-      console.log({
-        service: process.env.VUE_APP_EMAILJS_SERVICE_ID, template: process.env.VUE_APP_EMAILJS_TEMPLATE_ID, user: process.env.VUE_APP_EMAILJS_USER_ID
-      });
       await emailjs.send(process.env.VUE_APP_EMAILJS_SERVICE_ID, process.env.VUE_APP_EMAILJS_TEMPLATE_ID, emailParams, process.env.VUE_APP_EMAILJS_USER_ID)
           .then((result) => {
             console.log('SUCCESS!', result.status, result.text);
