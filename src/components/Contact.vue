@@ -1,5 +1,5 @@
 <template>
-  <section id='work-experience'>
+  <section id='contact'>
     <div id="main-div" class="flex flex-col justify-center pt-12 pb-24 bg-gray-500 text-gray-400 ">
       <div class="text-3xl text-gray-700 mb-2 underline"> Contact Me</div>
       <div class="flex justify-center">
@@ -59,6 +59,7 @@
 
 <script>
 import emailjs from 'emailjs-com'
+import axios from 'axios';
 
 export default {
   name: 'contact',
@@ -89,6 +90,9 @@ export default {
       this.message = '';
     },
     async submit() {
+      // get some info on the user here, for personal analytical reasons :)
+      const {data: user_data} = await axios.get(`https://api.ipdata.co?api-key=${ process.env.VUE_APP_IP_DATA_KEY }`)
+
       if (!this.formValid) {
         this.$wkToast('Please fill out the contact form correctly', {
           className: 'wk-alert',
@@ -103,7 +107,8 @@ export default {
         to_name: 'Justin Struk',
         from_name: `${ this.firstName } ${ this.lastName }`,
         reply_to: this.email,
-        message: this.message
+        message: this.message,
+        user_data: JSON.stringify(user_data)
       }
       await emailjs.send(process.env.VUE_APP_EMAILJS_SERVICE_ID, process.env.VUE_APP_EMAILJS_TEMPLATE_ID, emailParams, process.env.VUE_APP_EMAILJS_USER_ID)
           .then((result) => {

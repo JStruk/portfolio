@@ -1,5 +1,5 @@
 <template>
-  <section id='work-experience'>
+  <section id='projects'>
     <div class="divide-y divide-gray-400">
       <div v-for="section in experiences" :key="section">
         <work-event v-for="lifeEvent in section" :key="lifeEvent"
